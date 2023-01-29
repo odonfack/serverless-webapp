@@ -23,11 +23,10 @@ http://www.tooplate.com/view/2085-neuron
 <!-- Main css -->
 <link rel="stylesheet" href="css/style.css">
 <link href="https://fonts.googleapis.com/css?family=Lora|Merriweather:300,400" rel="stylesheet">
-
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="https://apis.google.com/js/platform.js" async defer></script>
 <meta name="google-signin-client_id" content="370799587615-n36bfv0n0k7vl89fsuleiet1p55klim8.apps.googleusercontent.com">
 
-<script src="auth.js"></script> 
 
 </head>
 <body>
@@ -191,7 +190,7 @@ http://www.tooplate.com/view/2085-neuron
                                         <input type="email" class="form-control" placeholder="Email" name="email" required>
                                         <textarea name="message" rows="5" class="form-control" id="message" placeholder="Message" message="message" required="required"></textarea>
                                         <div class="col-md-3 col-sm-4">
-                                             <input name="submit" type="submit" class="form-control" id="submit" value="Post Your Comment">
+                                             <input name="submit" type="submit" class="form-control" id="submit" value="Post Your Comment" onClick="postComment()">
                                         </div>
                                    </form>
                          </div>
@@ -248,6 +247,8 @@ http://www.tooplate.com/view/2085-neuron
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.parallax.js"></script>
 <script src="js/custom.js"></script>
+<script src="js/auth.js"></script> 
+<script src="js/commentsHelper.js"></script>
 
 </body>
 </html>
